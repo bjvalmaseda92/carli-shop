@@ -15,6 +15,7 @@ module.exports = {
       "@components": path.resolve(__dirname, "src/components/"),
       "@containers": path.resolve(__dirname, "src/containers/"),
       "@styles": path.resolve(__dirname, "src/styles/"),
+      "@contexts": path.resolve(__dirname, "src/contexts/"),
       "@routes": path.resolve(__dirname, "src/routes/"),
       "@hooks": path.resolve(__dirname, "src/hooks/"),
       "@pages": path.resolve(__dirname, "src/pages/"),
