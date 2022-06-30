@@ -9,8 +9,9 @@
   top: 60px;
   background-color: #fff;
   border-radius: 30px;
-  bottom: auto;
+  bottom: 0;
   border: solid 1px var(--very-light-pink);
+  position: fixed;
 }
 .title-container {
   display: flex;
