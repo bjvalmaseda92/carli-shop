@@ -6,7 +6,7 @@ import AppContext from "@contexts/AppContext";
 const OrderItem = ({ product, indexValue }) => {
   const { removeFromCart } = useContext(AppContext);
 
-  const handleClick = () => removeFromCart(product.id, indexValue);
+  const handleClick = () => removeFromCart(product.id);
   return (
     <div className="OrderItem">
       <figure>
@@ -14,7 +14,12 @@ const OrderItem = ({ product, indexValue }) => {
       </figure>
       <p>{product.title}</p>
       <p>${product.price}</p>
-      <img src={close} alt="close" onClick={handleClick} />
+      <img
+        src={close}
+        alt="close"
+        className="button-close"
+        onClick={handleClick}
+      />
     </div>
   );
 };
