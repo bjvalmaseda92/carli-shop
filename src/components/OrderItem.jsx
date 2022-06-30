@@ -6,7 +6,7 @@ import AppContext from "@contexts/AppContext";
 const OrderItem = ({ product, indexValue }) => {
   const { removeFromCart } = useContext(AppContext);
 
-  const handleClick = () => removeFromCart(product.id, indexValue);
+  const handleClick = () => removeFromCart(product.id);
   return (
     <div className="OrderItem">
       <figure>
